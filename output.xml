@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220516 21:21:38.779" rpa="false" schemaversion="2">
+<suite id="s1" name="Hey" source="C:\Users\dell\PycharmProjects\Shadow_project_Android\tests\hey.robot">
+<test id="s1-t1" name="App_launch_time">
+<kw name="Vid To Frame" library="app_launch_time">
+<var>${app_launch_time}</var>
+<msg timestamp="20220516 21:22:13.472" level="INFO">FPS is 46
+matching frames with reference frame...
+reference image is not matching with frame 0
+reference image is not matching with frame 1
+reference image is not matching with frame 2
+reference image is not matching with frame 3
+reference image is not matching with frame 4
+reference image is not matching with frame 5
+reference image is not matching with frame 6
+reference image is not matching with frame 7
+reference image is not matching with frame 8
+reference image is not matching with frame 9
+reference image is not matching with frame 10
+reference image is not matching with frame 11
+reference image is not matching with frame 12
+reference image is not matching with frame 13
+reference image is not matching with frame 14
+reference image is not matching with frame 15
+reference image is not matching with frame 16
+reference image is not matching with frame 17
+reference image is not matching with frame 18
+reference image is not matching with frame 19
+reference image is not matching with frame 20
+reference image is not matching with frame 21
+reference image is not matching with frame 22
+reference image is not matching with frame 23
+reference image is not matching with frame 24
+reference image is not matching with frame 25
+reference image is not matching with frame 26
+reference image is not matching with frame 27
+reference image is not matching with frame 28
+reference image is not matching with frame 29
+reference image is not matching with frame 30
+reference image is not matching with frame 31
+reference image is not matching with frame 32
+reference image is not matching with frame 33
+reference image is not matching with frame 34
+reference image is not matching with frame 35
+reference image is not matching with frame 36
+reference image is not matching with frame 37
+reference image is not matching with frame 38
+reference image is not matching with frame 39
+reference image is not matching with frame 40
+reference image is not matching with frame 41
+reference image is not matching with frame 42
+reference image is not matching with frame 43
+reference image is not matching with frame 44
+reference image is not matching with frame 45
+reference image is not matching with frame 46
+reference image is not matching with frame 47
+reference image is not matching with frame 48
+reference image is not matching with frame 49
+reference image is not matching with frame 50
+reference image is not matching with frame 51
+reference image is not matching with frame 52
+reference image is not matching with frame 53
+reference image is not matching with frame 54
+reference image is not matching with frame 55
+reference image is not matching with frame 56
+reference image is not matching with frame 57
+reference image is not matching with frame 58
+reference image is not matching with frame 59
+reference image is not matching with frame 60
+reference image is not matching with frame 61
+reference image is not matching with frame 62
+reference image is not matching with frame 63
+reference image is not matching with frame 64
+reference image is not matching with frame 65
+reference image is not matching with frame 66
+reference image is not matching with frame 67
+reference image is not matching with frame 68
+reference image is not matching with frame 69
+reference image is not matching with frame 70
+reference image is not matching with frame 71
+reference image is not matching with frame 72
+reference image is not matching with frame 73
+reference image is not matching with frame 74
+reference image is not matching with frame 75
+reference image is not matching with frame 76
+reference image is not matching with frame 77
+reference image is not matching with frame 78
+reference image is not matching with frame 79
+reference image is not matching with frame 80
+reference image is not matching with frame 81
+reference image is not matching with frame 82
+reference image is not matching with frame 83
+reference image is not matching with frame 84
+reference image is not matching with frame 85
+reference image is not matching with frame 86
+reference image is not matching with frame 87
+reference image is not matching with frame 88
+reference image is not matching with frame 89
+reference image is not matching with frame 90
+reference image is not matching with frame 91
+reference image is not matching with frame 92
+reference image is not matching with frame 93
+reference image is not matching with frame 94
+reference image is not matching with frame 95
+reference image is not matching with frame 96
+reference image is not matching with frame 97
+reference image is not matching with frame 98
+reference image is not matching with frame 99
+reference image is not matching with frame 100
+reference image is not matching with frame 101
+reference image is not matching with frame 102
+reference image is not matching with frame 103
+reference image is not matching with frame 104
+reference image is not matching with frame 105
+reference image is not matching with frame 106
+reference image is not matching with frame 107
+reference image is not matching with frame 108
+reference image is not matching with frame 109
+reference image is not matching with frame 110
+reference image is not matching with frame 111
+reference image is not matching with frame 112
+reference image is not matching with frame 113
+reference image is not matching with frame 114
+reference image is not matching with frame 115
+reference image is not matching with frame 116
+reference image is not matching with frame 117
+reference image is not matching with frame 118
+reference image is not matching with frame 119
+reference image is not matching with frame 120
+reference image is not matching with frame 121
+reference image is not matching with frame 122
+reference image is not matching with frame 123
+reference image is not matching with frame 124
+reference image is not matching with frame 125
+reference image is not matching with frame 126
+reference image is not matching with frame 127
+reference image is not matching with frame 128
+reference image is not matching with frame 129
+reference image is not matching with frame 130
+reference image is not matching with frame 131
+reference image is not matching with frame 132
+reference image is not matching with frame 133
+reference image is not matching with frame 134
+reference image is not matching with frame 135
+reference image is not matching with frame 136
+reference image is not matching with frame 137
+frame no 138 is same
+App launch time is 2secs</msg>
+<msg timestamp="20220516 21:22:13.472" level="INFO">${app_launch_time} = 2.984662576687117</msg>
+<status status="PASS" starttime="20220516 21:21:39.437" endtime="20220516 21:22:13.472"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${app_launch_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220516 21:22:13.472" endtime="20220516 21:22:13.487"/>
+</kw>
+<status status="PASS" starttime="20220516 21:21:39.437" endtime="20220516 21:22:13.488"/>
+</test>
+<status status="PASS" starttime="20220516 21:21:38.781" endtime="20220516 21:22:13.527"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Hey">Hey</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220516 21:21:39.254" level="WARN">Imported library 'appium' contains no keywords.</msg>
+</errors>
+</robot>

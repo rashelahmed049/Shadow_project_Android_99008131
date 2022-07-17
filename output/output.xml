@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220717 15:58:12.023" rpa="false" schemaversion="2">
+<suite id="s1" name="Open Application" source="C:\Users\dell\PycharmProjects\Shadow_project_Android\tests\Open_Application.robot">
+<test id="s1-t1" name="App_launch_time">
+<kw name="Launch_youtube" library="CommonFunctionality">
+<msg timestamp="20220717 15:58:57.302" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=3200163d4b6cc50f</arg>
+<arg>appPackage=com.google.android.youtube</arg>
+<arg>appActivity=com.google.android.youtube.HomeActivity</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<msg timestamp="20220717 15:58:57.302" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='Android' | deviceName='3200163d4b6cc50f' | appPackage='com.google.android.youtube' | appActivity='com.google.android.youtube.HomeActivity' ]</msg>
+<msg timestamp="20220717 15:58:59.564" level="INFO">Could not connect to port 4723 on host localhost</msg>
+<msg timestamp="20220717 15:58:59.564" level="INFO">Could not get IP address for host: localhost</msg>
+<msg timestamp="20220717 15:58:59.564" level="DEBUG">POST http://localhost:4723/wd/hub/session {"capabilities": {"firstMatch": [{"platformName": "Android", "appium:deviceName": "3200163d4b6cc50f", "appium:appPackage": "com.google.android.youtube", "appium:appActivity": "com.google.android.youtube.HomeActivity"}]}, "desiredCapabilities": {"platformName": "Android", "deviceName": "3200163d4b6cc50f", "appPackage": "com.google.android.youtube", "appActivity": "com.google.android.youtube.HomeActivity"}}</msg>
+<msg timestamp="20220717 15:58:59.564" level="DEBUG">Starting new HTTP connection (1): localhost:4723</msg>
+<msg timestamp="20220717 15:59:03.640" level="DEBUG">Incremented Retry for (url='/wd/hub/session'): Retry(total=2, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20220717 15:59:03.640" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001B780407B20&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20220717 15:59:03.668" level="DEBUG">Starting new HTTP connection (2): localhost:4723</msg>
+<msg timestamp="20220717 15:59:07.750" level="DEBUG">Incremented Retry for (url='/wd/hub/session'): Retry(total=1, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20220717 15:59:07.750" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001B780407D30&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20220717 15:59:07.751" level="DEBUG">Starting new HTTP connection (3): localhost:4723</msg>
+<msg timestamp="20220717 15:59:11.810" level="DEBUG">Incremented Retry for (url='/wd/hub/session'): Retry(total=0, connect=None, read=None, redirect=None, status=None)</msg>
+<msg timestamp="20220717 15:59:11.810" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001B780407EB0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20220717 15:59:11.810" level="DEBUG">Starting new HTTP connection (4): localhost:4723</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220717 15:59:15.853" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220717 15:59:15.961" level="FAIL">No application is open</msg>
+<msg timestamp="20220717 15:59:15.961" level="DEBUG">Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 367, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20220717 15:59:15.853" endtime="20220717 15:59:15.961"/>
+</kw>
+<msg timestamp="20220717 15:59:15.966" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20220717 15:59:16.295" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001B780438040&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+<msg timestamp="20220717 15:59:16.295" level="DEBUG">Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 52, in open_application
+    application = webdriver.Remote(str(remote_url), desired_caps)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\appium\webdriver\webdriver.py", line 267, in __init__
+    super().__init__(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\appium\webdriver\webdriver.py", line 357, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\request.py", line 78, in request
+    return self.request_encode_body(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 813, in urlopen
+    return self.urlopen(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 813, in urlopen
+    return self.urlopen(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 813, in urlopen
+    return self.urlopen(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))</msg>
+<status status="FAIL" starttime="20220717 15:58:57.302" endtime="20220717 15:59:16.295"/>
+</kw>
+<status status="FAIL" starttime="20220717 15:58:57.302" endtime="20220717 15:59:16.295"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>calculating app launch time.....</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.297" endtime="20220717 15:59:16.297"/>
+</kw>
+<kw name="Start Screen Recording" library="AppiumLibrary">
+<arg>timeLimit=10</arg>
+<doc>Starts an asynchronous Screen Recording for the current open application.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.299" endtime="20220717 15:59:16.299"/>
+</kw>
+<kw name="Verifiy Page Open" library="MainPage">
+<status status="NOT RUN" starttime="20220717 15:59:16.299" endtime="20220717 15:59:16.299"/>
+</kw>
+<kw name="Stop Screen Recording" library="AppiumLibrary">
+<arg>filename=youtube_launch</arg>
+<doc>Gathers the output from the previously started screen recording              to a media file, then embeds it to the log.html(Android Only).</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.299" endtime="20220717 15:59:16.299"/>
+</kw>
+<kw name="App Launch Time" library="app_launch_time">
+<var>${app_launch_time}</var>
+<status status="NOT RUN" starttime="20220717 15:59:16.302" endtime="20220717 15:59:16.302"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${app_launch_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.303" endtime="20220717 15:59:16.303"/>
+</kw>
+<status status="FAIL" starttime="20220717 15:58:57.299" endtime="20220717 15:59:16.304">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001B780438040&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</status>
+</test>
+<test id="s1-t2" name="Operation_navigation_time">
+<kw name="Operate Options" library="MainPage">
+<msg timestamp="20220717 15:59:16.309" level="TRACE">Arguments: [  ]</msg>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>${LOCATOR_ID}</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<msg timestamp="20220717 15:59:16.309" level="TRACE">Arguments: [ 'com.google.android.youtube:id/youtube_logo' ]</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220717 15:59:16.309" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220717 15:59:16.314" level="FAIL">No application is open</msg>
+<msg timestamp="20220717 15:59:16.314" level="DEBUG">Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 367, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20220717 15:59:16.309" endtime="20220717 15:59:16.314"/>
+</kw>
+<msg timestamp="20220717 15:59:16.314" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220717 15:59:16.320" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220717 15:59:16.320" level="FAIL">No application is open</msg>
+<msg timestamp="20220717 15:59:16.320" level="DEBUG">Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 367, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20220717 15:59:16.319" endtime="20220717 15:59:16.320"/>
+</kw>
+<msg timestamp="20220717 15:59:16.320" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20220717 15:59:16.434" level="FAIL">No application is open</msg>
+<msg timestamp="20220717 15:59:16.434" level="DEBUG">Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 46, in wait_until_page_contains
+    self._wait_until(timeout, error, self._is_text_present, text)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 122, in _wait_until
+    self._wait_until_no_error(timeout, wait_func)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 120, in wait_func
+    return None if function(*args) else error
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_element.py", line 615, in _is_text_present
+    source_norm = normalize('NFD', self.get_source())
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 170, in get_source
+    return self._current_application().page_source
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 367, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20220717 15:59:16.309" endtime="20220717 15:59:16.434"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${LIBRARYLOCATOR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.434" endtime="20220717 15:59:16.434"/>
+</kw>
+<kw name="Start Screen Recording" library="AppiumLibrary">
+<arg>timeLimit=10</arg>
+<doc>Starts an asynchronous Screen Recording for the current open application.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.434" endtime="20220717 15:59:16.434"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.434" endtime="20220717 15:59:16.434"/>
+</kw>
+<kw name="Stop Screen Recording" library="AppiumLibrary">
+<arg>filename=home_to_library</arg>
+<doc>Gathers the output from the previously started screen recording              to a media file, then embeds it to the log.html(Android Only).</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.434" endtime="20220717 15:59:16.434"/>
+</kw>
+<kw name="Go Back" library="AppiumLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.434" endtime="20220717 15:59:16.434"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${SHORTS_LOCATOR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.434" endtime="20220717 15:59:16.434"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.434" endtime="20220717 15:59:16.434"/>
+</kw>
+<kw name="Go Back" library="AppiumLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.434" endtime="20220717 15:59:16.434"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${CREATE_LOCATOR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.434" endtime="20220717 15:59:16.434"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.434" endtime="20220717 15:59:16.434"/>
+</kw>
+<kw name="Go Back" library="AppiumLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.434" endtime="20220717 15:59:16.434"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${SUBSCRIPTION_LOCATOR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.434" endtime="20220717 15:59:16.434"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.434" endtime="20220717 15:59:16.439"/>
+</kw>
+<status status="FAIL" starttime="20220717 15:59:16.309" endtime="20220717 15:59:16.439"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>calculating navigation time...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.441" endtime="20220717 15:59:16.441"/>
+</kw>
+<kw name="Navigate Time" library="operations_navigation_time">
+<var>${operation_navigation_time}</var>
+<status status="NOT RUN" starttime="20220717 15:59:16.441" endtime="20220717 15:59:16.441"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${operation_navigation_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.444" endtime="20220717 15:59:16.444"/>
+</kw>
+<status status="FAIL" starttime="20220717 15:59:16.304" endtime="20220717 15:59:16.444">No application is open</status>
+</test>
+<test id="s1-t3" name="Playback_verification_status">
+<kw name="Search" library="MainPage">
+<arg>python</arg>
+<msg timestamp="20220717 15:59:16.447" level="TRACE">Arguments: [ ${text}='python' ]</msg>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>${LOCATOR_ID}</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<msg timestamp="20220717 15:59:16.447" level="TRACE">Arguments: [ 'com.google.android.youtube:id/youtube_logo' ]</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220717 15:59:16.452" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220717 15:59:16.452" level="FAIL">No application is open</msg>
+<msg timestamp="20220717 15:59:16.452" level="DEBUG">Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 367, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20220717 15:59:16.447" endtime="20220717 15:59:16.452"/>
+</kw>
+<msg timestamp="20220717 15:59:16.452" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220717 15:59:16.457" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220717 15:59:16.457" level="FAIL">No application is open</msg>
+<msg timestamp="20220717 15:59:16.457" level="DEBUG">Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 367, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20220717 15:59:16.457" endtime="20220717 15:59:16.457"/>
+</kw>
+<msg timestamp="20220717 15:59:16.457" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20220717 15:59:16.461" level="FAIL">No application is open</msg>
+<msg timestamp="20220717 15:59:16.461" level="DEBUG">Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 46, in wait_until_page_contains
+    self._wait_until(timeout, error, self._is_text_present, text)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 122, in _wait_until
+    self._wait_until_no_error(timeout, wait_func)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 120, in wait_func
+    return None if function(*args) else error
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_element.py", line 615, in _is_text_present
+    source_norm = normalize('NFD', self.get_source())
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 170, in get_source
+    return self._current_application().page_source
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python39\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 367, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20220717 15:59:16.447" endtime="20220717 15:59:16.461"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${SEARCH_LOCATOR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.461" endtime="20220717 15:59:16.461"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>${SEARCH_INPUT_LOCATOR}</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.461" endtime="20220717 15:59:16.461"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${SEARCH_INPUT_LOCATOR}</arg>
+<arg>${text}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.461" endtime="20220717 15:59:16.461"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.TextView[@text='${text}']</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.461" endtime="20220717 15:59:16.461"/>
+</kw>
+<kw name="Send" library="AutoItLibrary">
+<arg>{ENTER}</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.461" endtime="20220717 15:59:16.461"/>
+</kw>
+<status status="FAIL" starttime="20220717 15:59:16.447" endtime="20220717 15:59:16.461"/>
+</kw>
+<kw name="Open Video" library="MainPage">
+<status status="NOT RUN" starttime="20220717 15:59:16.464" endtime="20220717 15:59:16.464"/>
+</kw>
+<kw name="Video Launch Time" library="vidlaunch_time">
+<var>${playback_verification_status}</var>
+<status status="NOT RUN" starttime="20220717 15:59:16.464" endtime="20220717 15:59:16.464"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${playback_verification_status}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220717 15:59:16.464" endtime="20220717 15:59:16.464"/>
+</kw>
+<status status="FAIL" starttime="20220717 15:59:16.447" endtime="20220717 15:59:16.464">No application is open</status>
+</test>
+<doc>This file will handle various operations in youtube</doc>
+<status status="FAIL" starttime="20220717 15:58:12.027" endtime="20220717 15:59:16.464"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Open Application">Open Application</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220717 15:59:03.640" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001B780407B20&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20220717 15:59:07.750" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001B780407D30&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20220717 15:59:11.810" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001B780407EB0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /wd/hub/session</msg>
+<msg timestamp="20220717 15:59:15.966" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20220717 15:59:16.314" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20220717 15:59:16.320" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20220717 15:59:16.452" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20220717 15:59:16.457" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
